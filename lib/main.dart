@@ -1,7 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:happyholiday/pages/home/main_text_page.dart';
+import 'package:google_mobile_ads/google_mobile_ads.dart';
 import 'package:get/get.dart';
 void main() {
+  WidgetsFlutterBinding.ensureInitialized();
+  MobileAds.instance.initialize();
   runApp(const MyApp());
 }
 

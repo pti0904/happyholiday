@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:happyholiday/pages/home/text_page_body.dart';
+import 'package:happyholiday/pages/home/text_with_map.dart';
 import 'package:happyholiday/utils/dimensions.dart';
 import 'package:happyholiday/widgets/big_text.dart';
 import 'package:happyholiday/widgets/small_text.dart';
 import 'package:happyholiday/utils/colors.dart';
+import 'package:happyholiday/intersitital_helper.dart';
 
 class MainTextPage extends StatefulWidget {
   const MainTextPage({Key? key}) : super(key: key);
@@ -14,6 +16,7 @@ class MainTextPage extends StatefulWidget {
 }
 
 class _MainTextPageState extends State<MainTextPage> {
+  InterstitialHelper adsMobHelper = InterstitialHelper();
 
   @override
   Widget build(BuildContext context) {
